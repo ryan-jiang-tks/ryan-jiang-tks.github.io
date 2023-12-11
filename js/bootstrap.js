@@ -1,10 +1,10 @@
 // build time:Sun May 03 2020 09:40:32 GMT+0800 (GMT+08:00)
 $(document).ready(function() {
     $(document).trigger("bootstrap:before");
-    NexT.utils.isMobile() && window.FastClick.attach(document.body);
-    NexT.utils.lazyLoadPostsImages();
-    NexT.utils.registerESCKeyEvent();
-    NexT.utils.registerBackToTop();
+    // NexT.utils.isMobile() && window.FastClick.attach(document.body);
+    // NexT.utils.lazyLoadPostsImages();
+    // NexT.utils.registerESCKeyEvent();
+    // NexT.utils.registerBackToTop();
     $(".site-nav-toggle button").on("click", function() {
         var e = $(".site-nav");
         var t = "site-nav-on";
@@ -17,7 +17,7 @@ $(document).ready(function() {
     });
     CONFIG.fancybox && NexT.utils.wrapImageWithFancyBox();
     CONFIG.tabs && NexT.utils.registerTabsTag();
-    NexT.utils.embeddedVideoTransformer();
+    // NexT.utils.embeddedVideoTransformer();
     NexT.utils.addActiveClassToMenuItem();
     NexT.motion.integrator.add(NexT.motion.middleWares.logo).add(NexT.motion.middleWares.menu).add(NexT.motion.middleWares.postList).add(NexT.motion.middleWares.sidebar);
     $(document).trigger("motion:before");
