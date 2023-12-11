@@ -1,5 +1,6 @@
 // build time:Sun May 03 2020 09:40:32 GMT+0800 (GMT+08:00)
 $(document).ready(function() {
+    console.log("This is the first function.");
     $(document).trigger("bootstrap:before");
     // NexT.utils.isMobile() && window.FastClick.attach(document.body);
     // NexT.utils.lazyLoadPostsImages();
